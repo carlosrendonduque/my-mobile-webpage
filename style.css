@@ -14,11 +14,48 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+#noteForm {
+    margin-bottom: 20px;
+}
+
+#noteText {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
-    margin-top: 20px;
     cursor: pointer;
 }
+
+.note {
+    background: #ffef8b;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    word-wrap: break-word;
+}
+
+.note::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ffef8b;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
